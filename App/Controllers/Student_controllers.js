@@ -2,7 +2,7 @@
 import Student_Model from "../Model/Student_Model.js";
 import Parent_Model from "../Model/Parent_Model.js";
 import { validationResult } from "express-validator";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 import Codes from "../utils/Codes.js";
 import JWT from "../utils/JWT.js";
 import fs from "fs";

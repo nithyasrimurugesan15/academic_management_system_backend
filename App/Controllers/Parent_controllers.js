@@ -4,7 +4,7 @@ import Student_Model from "../Model/Student_Model.js";
 import ISPassed_Mode from "../Model/ISPassed_Mode.js";
 
 import { validationResult } from "express-validator";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 import Codes from "../utils/Codes.js";
 import JWT from "../utils/JWT.js";
 import fs from "fs";

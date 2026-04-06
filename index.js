@@ -35,8 +35,8 @@ mongoose
 const App = express();
 App.use(express.json());
 App.use(cors({
-  origin: process.env.CLIENT_URI || "*",
-  credentials: true
+  origin: process.env.CLIENT_URI,
+credentials: true
 }));
 
 App.use("/Uploads", express.static(path.join(__dirname, "/Uploads")));

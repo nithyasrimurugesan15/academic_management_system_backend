@@ -5,7 +5,7 @@ import Instructor_Model from "../Model/Instructor_Model.js";
 import { validationResult } from "express-validator";
 import Codes from "../utils/Codes.js";
 import JWT from "../utils/JWT.js";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 
 // login Admin authentication
 const Admin_Login = async (Req, Res) => {
