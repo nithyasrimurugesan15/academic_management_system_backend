@@ -2,8 +2,8 @@
 import express from "express";
 import { body } from "express-validator";
 import Videos_controllers from "../Controllers/Videos_controllers.js";
-import Verify_User from "../Utils/Verify_User.js";
-import JWT from "../Utils/JWT.js";
+import Verify_User from "../utils/Verify_User.js";
+import JWT from "../utils/JWT.js";
 import upload_Video from "../Multer/Videos.js";
 
 const Router = express.Router();

@@ -2,8 +2,8 @@
 import express from "express";
 import { body } from "express-validator";
 import Inquiries_controllers from "../Controllers/Inquiries_controllers.js";
-import Verify_User from "../Utils/Verify_User.js";
-import JWT from "../Utils/JWT.js";
+import Verify_User from "../utils/Verify_User.js";
+import JWT from "../utils/JWT.js";
 
 const Router = express.Router();
 

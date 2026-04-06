@@ -4,7 +4,7 @@ import Student_Model from "../Model/Student_Model.js";
 import Instructor_Model from "../Model/Instructor_Model.js";
 import { validationResult } from "express-validator";
 import Codes from "../utils/Codes.js";
-import JWT from "../Utils/JWT.js";
+import JWT from "../utils/JWT.js";
 import bcrypt from "bcrypt";
 
 // login Admin authentication

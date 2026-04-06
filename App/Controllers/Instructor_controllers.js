@@ -3,7 +3,7 @@ import Instructor_Model from "../Model/Instructor_Model.js";
 import { validationResult } from "express-validator";
 import bcrypt from "bcrypt";
 import Codes from "../utils/Codes.js";
-import JWT from "../Utils/JWT.js";
+import JWT from "../utils/JWT.js";
 import fs from "fs";
 
 // login Instructor authentication

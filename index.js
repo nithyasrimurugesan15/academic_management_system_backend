@@ -34,7 +34,10 @@ mongoose
 // middlewares
 const App = express();
 App.use(express.json());
-App.use(cors());
+App.use(cors({
+  origin: process.env.CLIENT_URI || "*",
+  credentials: true
+}));
 
 App.use("/Uploads", express.static(path.join(__dirname, "/Uploads")));
 App.use("/API/Student", Student);
@@ -83,6 +86,8 @@ io.on("connection", (socket) => {
 });
 
 // Server
-AppServer.listen(3001, () => {
-  console.log("Listen in port 3001");
+const PORT = process.env.PORT || 3001;
+
+AppServer.listen(PORT, () => {
+  console.log(`Server running on ${PORT}`);
 });
